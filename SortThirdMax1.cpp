@@ -1,8 +1,7 @@
 /*
 Carl Christian G. Tilid BSCS II CSC124
 First Solution Third Max
-Find the third highest number in an array using bubble sort the
-array in descending order
+Find the third highest number in an array using Bubble sort to sort the array in descending order
 */
 
 #include <iostream>
