@@ -27,15 +27,25 @@ int main(){
         }
     }
 
-    //Comparing the 3 max values against the each other and get min value
+    
+    /*Comparing the 3 max values against the each other and get min value
     if((max[0]<=max[1]) && (max[0]<=max[2])){
-        swap(max[0], max[2]);   //Assign the lowest value to the 3rd index
+        swap(max[0], max[2]);   //Swap the lowest value to the 3rd index
     }
     else if ((max[1]<=max[0]) && (max[1]<=max[2])){
         swap(max[1], max[2]);   
     }
     else if ((max[2]<=max[0]) && (max[2]<=max[1])){
         //Do nothing
+    }
+    */
+
+   //Get Minimum value of the max 3 since it is the third max
+    int min = max[0];   //Initalizing min as the default value
+    for(int i=1; i<3; i++){
+        if (min>max[i]){
+            min = max[i]; //Update min value
+        }
     }
 
     //Display The 3 Max values
@@ -45,6 +55,6 @@ int main(){
     cout << endl;
 
     //Display Third max
-    cout << "The third maximum value in the array is " << max[2] << endl;
+    cout << "The third maximum value in the array is " << min << endl;
     return 0;
 }
