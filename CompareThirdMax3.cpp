@@ -21,7 +21,7 @@ int main(){
 
     //Comparing 3 values from the array alternatingly
     int max[3] = {arr[0], arr[1], arr[2]};  //Initialize default 3 max values
-    for(int i = 3; i<arrlen-1; i++){
+    for(int i = 3; i<arrlen; i++){
         if(max[i%3]<arr[i]){    //Using modulo to alternately compare the 3 max values 
             max[i%3] = arr[i];  //Assign value to max if its greater than current max
         }

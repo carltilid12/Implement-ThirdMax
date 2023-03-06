@@ -25,7 +25,7 @@ int main(){
     for(int i=0; i<3; i++){     //Copying the maximum values from the original arr 
         
         max = arr[i];   //Initial max value to compare
-        for(int j=i+1; j<arrlen-1; j++){    
+        for(int j=i+1; j<arrlen; j++){    
             if (arr[j]>max){    //Comparing values to find the maximum value
                 max = arr[j];   
                 swap(arr[i], arr[j]);   /*Swap the indexes of the max value to the inital max value
